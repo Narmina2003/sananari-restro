@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>menu</title>
+        <style>
+            body{
+                background:linear-gradient(red,yellow,green,purple);
+            }
+            .heading{
+                text-align: center;
+                color:black;
+                text-transform: uppercase;
+                padding-bottom: 3.5rem;
+                font-size: 4rem;
+            }
+            .heading span{
+                color:purple;
+                text-transform: uppercase;
+            }
+            .menu .box-container{
+                display:grid;
+                grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+                
+            }
+            .menu .box-container .box{
+                padding: 5rem;
+                text-align: center;
+                border:var(--border);
+                color:black;
+            }
+            .menu .box-container .box img{
+                height:15rem;
+            }
+            .menu .box-container .box h3{
+                color:black;
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+            .menu .box-container .box p{
+                font-family: cursive;
+                font-size: large;
+            }
+            .menu .box-container .box .price{
+                color:black;
+                font-size: 2.5rem;
+                padding: 1rem 0;
+            
+            }
+            .menu .box-container .box .price span{
+                font-size: 1.5rem;
+                text-decoration: line-through;
+                
+            }
+            .menu .box-container .box:hover{
+                background:white;
+            }
+            .menu .box-container .box:hover >*{
+                color:black;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="menu" id="menu">
+            <h1 class="heading"> OUR <span>MENU</span> </h1>
+            <div class="box-container">
+                <div class="box">
+                    <img src="image/ven1.jpg" alt="">
+                <h3>CHOCOLATE CAKE</h3>
+                <p>Keep the Best, Taste the best</p>
+                <div class="price">$15.99<span>20.99</span></div>
+                <a href="#" class="btn">add to card</a>
+                </div>
+                <div class="box">
+                    <img src="image/ven2.jpg" alt="">
+                <h3>BIRTHDAY CAKE</h3>
+                <p>Create a moment with us </p>
+                <div class="price">$17.99<span>22.99</span></div>
+                <a href="#" class="btn">add to card</a>
+                </div>
+                <div class="box">
+                    <img src="image/ven4.jpg" alt="">
+                <h3>WEEDING CAKE</h3>
+                <p>"A happy marriage is a long conversation which always seems too"</p>
+                <div class="price">$18.99<span>25.99</span></div>
+                <a href="#" class="btn">add to card</a>
+                </div>
+                <div class="box">
+                    <img src="image/ven5.jpg" alt="">
+                <h3>FUNCTION CAKE</h3>
+                <p>When only the best will do!</p>
+                <div class="price">$25.99<span>32.99</span></div>
+                <a href="#" class="btn">add to card</a>
+                </div>
+                <div class="box">
+                    <img src="image/ven6.jpg" alt="">
+                <h3>COUPLE CAKE</h3>
+                <p>Our hearts speak ❤️ the same language</p>
+                <div class="price">$22.99<span>28.99</span></div>
+                <a href="#" class="btn">add to card</a>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
